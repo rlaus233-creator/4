@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// 중요: 로컬에서 PNG 파일을 사용하려면 아래 줄의 주석을 해제하고,
-// 'src' 폴더에 'puri_static.png' 파일이 있는지 확인하세요.
-// import mainCardMascotPng from './puri_static.png'; 
+import mainCardMascotPng from './puri_static.png'; 
 
 // Helper component for SVG icons to avoid repetition
 const Icon = ({ path, className = "w-6 h-6", solid = false }) => (
@@ -20,10 +18,8 @@ const Icon = ({ path, className = "w-6 h-6", solid = false }) => (
 // 메인 카드에 들어갈 PNG 마스코트 컴포넌트
 const MainCardMascot = ({ className }) => (
   <img 
-    // 로컬 파일이 없을 때를 대비해 임시 이미지 URL을 사용합니다.
-    src="https://placehold.co/160x160/A7F3D0/1F2937?text=Puri" 
-    // 로컬에 'puri_static.png' 파일이 있다면 위 src를 주석 처리하고 아래 src를 사용하세요.
-    // src={mainCardMascotPng} 
+    
+    src='puri_static.png'
     alt="Puri Mascot" 
     className={className} 
   />
