@@ -1,5 +1,6 @@
 {
   "name": "puri-app",
+  "homepage": "https://rlaus233-creator.github.io/4/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,11 +13,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d build"
+
+},
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -37,6 +41,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17"
   }
